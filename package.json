@@ -1,0 +1,22 @@
+{
+    "name": "leaflet-canvas-test",
+    "version": "0.0.1",
+    "description": "A test for leaflet canvas",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wandergis/leaflet-canvas-test.git"
+    },
+    "author": "wandergis",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wandergis/leaflet-canvas-test/issues"
+    },
+    "homepage": "https://github.com/wandergis/leaflet-canvas-test#readme",
+    "dependencies": {
+
+    }
+}

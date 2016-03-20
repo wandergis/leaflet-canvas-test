@@ -20,38 +20,7 @@
 <body>
     <div id="map"></div>
     <script src="leaflet/leaflet.js"></script>
-    <script src="L.CanvasOverlay.js"></script>
-    <script>
-    var map = L.map('map').setView([40, 130], 4);
-    L.tileLayer('http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-        maxZoom: 18,
-        attribution: 'ESRI灰色底图'
-    }).addTo(map);
-
-    var render = function(ovl, par) {
-        console.time("test");
-        var canvas = par.canvas;
-        var ctx = canvas.getContext('2d');
-        // clear canvas
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        for (i = 100000; i >= 0; i--) {
-            var point = this._map.latLngToContainerPoint(new L.LatLng(Math.floor(Math.random() * 180 - 90), Math.floor(Math.random() * 360 - 180)));
-            if (point.x > canvas.width || point.y > canvas.height) {
-                continue;
-            }
-            ctx.fillStyle = '#' + Math.floor(Math.random() * 16777215).toString(16);;
-            ctx.strokeStyle = '#' + Math.floor(Math.random() * 16777215).toString(16);;
-            ctx.beginPath();
-            ctx.arc(point.x, point.y, 2, 0, Math.PI * 2.0, true, true);
-            ctx.closePath();
-            ctx.fill();
-            ctx.stroke();
-
-        }
-        console.timeEnd("test");
-    }
-    L.canvasOverlay().drawing(render).addTo(map);
-    </script>
+    <script src="dist/canvastest.min.js"></script>
 </body>
 
 </html>
