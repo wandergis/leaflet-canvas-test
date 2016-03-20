@@ -3,7 +3,8 @@ A sample to test leaflet canvaslayer.
 
 ## 一个用来测试leaflet使用canvas渲染数据的效率
 
-### [在线预览](http://wandergis.com/leaflet-canvas-test/)
+### [随机十万点在线预览](http://wandergis.com/leaflet-canvas-test/index.html)
+### [12.6万数据点动态查询渲染](http://wandergis.com/leaflet-canvas-test/rtest.html)
 
 ### 随机点截图
 
